@@ -1,23 +1,12 @@
 #!/bin/bash
 
-# Check if version is passed as an argument
-if [ -z "$1" ]; then
-    echo "Usage: $0 <version>"
-    exit 1
-fi
+# Source common variables
+source ./tools/common_variables.sh $1
 
 # if 'data' dir does not exist create it
 if [ ! -d "./data" ]; then
     mkdir data
 fi
-
-# Names and version of the project
-DIR_NAME=${PWD##*/}
-VERSION=$1
-GEN_NAME=${DIR_NAME}_$VERSION
-
-# Enviroment File localtion
-ENV_FILE="./data/.env_$GEN_NAME"
 
 # Generate .env file
 cat <<EOF >$ENV_FILE
