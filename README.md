@@ -1,5 +1,9 @@
 # Parrallel Compose
 
+This is a project template used for running serveral docker compose instances in test environments such as CI in order to parallalize the testing process on a single instance.
+
+Adding more services to the `docker-compose.yaml` would require altering the startup and shutdown scripts.
+
 ## Usage
 
 Run the script in root dir in order to spawn a parallel docker compose
