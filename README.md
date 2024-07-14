@@ -5,8 +5,16 @@
 Run the script in root dir in order to spawn a parallel docker compose
 
 ```bash
-start_versioned_docker.sh <Version>
+./src/up.sh <Version>
 ```
+
+To shut down the container run the `down.sh` script in the same fashion as the startup
+
+```bash
+./src/down.sh <Version>
+```
+
+**Note** The script picks up the parent directory name to avoid conflicts with other projects.
 
 ## Generated Files
 

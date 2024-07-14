@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Source common variables
-source ./tools/common_variables.sh $1
+source ./src/common_variables.sh $1
 
 # Stop and remove containers and volumes
 docker-compose --env-file $ENV_FILE down -v

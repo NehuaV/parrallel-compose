@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Source common variables
-source ./tools/common_variables.sh $1
+source ./src/common_variables.sh $1
 
 # if 'data' dir does not exist create it
 if [ ! -d "./data" ]; then
